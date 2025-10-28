@@ -1,0 +1,120 @@
+html {
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navi {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navi:hover {
+    color: white;
+    background-color: deepskyblue;
+}
+
+main {
+    text-align: left;
+    padding: auto;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.info {
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+
+}
+
+.motto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.formular{
+    text-align: center;  
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 200px;  
+    height: 20px;  
+    font-size: 16px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form input[name="Subject"]{
+    width: 300px;  
+    height: 20px;  
+    font-size: 16px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+form textarea {
+    width: 400px;  
+    height: 150px; 
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.adress ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.contactList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.adress {
+    text-align: center;
+}
