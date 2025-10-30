@@ -23,23 +23,29 @@
         <section class="formular">
             <h2>Formular de contact</h2>
 
-            <form action="mailto:daniel.tatsel@yahoo.com">
+            <form action="mailto:daniel.tatsel@yahoo.com" class=>
                 <label for="nume">Nume:</label><br>
-                <input type="text" id="nume" name="Nume" required><br>
+                <input type="text" id="nume" name="Nume" placeholder="Introdu Numele: " required><br>
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="Email" required><br>
+                <input type="email" id="email" name="Email" placeholder="Introdu email-ul tau: exemplu@email.com"><br>
 
                 <label for="subject">Subiect:</label><br>
-                <input type="text" id="subject" name="Subject"> <br>
+                <input type="text" id="subject" name="Subject" placeholder="Introdu subiectul email-ului:"> <br>
 
                 <label for="body">Mesaj:</label><br>
-                <textarea id="body" name="Body" rows="5" required></textarea><br>
+                <textarea id="body" name="Body" rows="5" placeholder="Scrie continutul email-ului:" required></textarea><br>
 
                 <button type="submit">Trimite</button>
 
 
             </form>
+
+            <p>Alternativ poti trimite un email direct, apasand aici: 
+            <a href="mailto:daniel.tatasel@yahoo.com">Trimite email.</a>
+            </p>
+        <p>Se mai poate trimite email apasand pe iconita aferenta din sectiunea "Informatii de contact"</p>
+        
         </section>
 
         <section class="adress">
