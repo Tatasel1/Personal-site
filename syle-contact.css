@@ -1,0 +1,382 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(48, 161, 241);
+    margin: 10px 0 20px 0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(48, 161, 241);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
+
+header {
+    background-color: rgb(222, 240, 253);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    
+}
+.logo-text {
+    font-size: 22px; 
+    font-weight: 600; 
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 50;
+    display: none;
+ }
+ #overlay.active {
+    display: block;
+     
+ }
+
+.nav-home {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    
+ }
+
+ nav{   
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 20px;
+    margin-right: 10px;
+ }
+
+ .navi{
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 3px solid rgb(48, 161, 241); 
+    padding: 5px 10px; 
+    gap: 20px;
+    text-decoration: none;
+ }
+
+ .navi:hover {
+    background-color: rgb(48, 161, 241); 
+    color: white; 
+    transition: all 0.3s ease; 
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+ }
+
+ .burger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+ }
+
+main {
+    padding: 20px 40px;
+}
+
+.formular {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.formular form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formular label {
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    margin-bottom: -5px;
+    font-size: 16px;
+}
+
+.formular input[type="text"],
+.formular input[type="email"],
+.formular textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid rgb(186, 225, 253);
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formular input:focus,
+.formular textarea:focus {
+    border-color: rgb(48, 161, 241);
+    outline: none;
+    box-shadow: 0 0 5px rgba(48, 161, 241, 0.5);
+}
+
+.formular textarea {
+    resize: vertical;
+}
+
+.formular button[type="submit"] {
+    display: block;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: rgb(48, 161, 241);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    align-self: center;
+}
+
+.formular button[type="submit"]:hover {
+    background-color: rgb(35, 120, 180);
+}
+
+.formular a {
+    color: rgb(48, 161, 241);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.adress {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.adress ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.adress .contactList a svg {
+    width: 40px;
+    height: 40px;
+    fill: rgb(50, 50, 50);
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.adress .contactList a:hover svg {
+    fill: rgb(48, 161, 241);
+    transform: scale(1.1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 25px; 
+  padding: 10px 0; 
+  font-size: 18px;
+  background-color:rgb(222, 240, 253); 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(186, 225, 253);
+  
+}
+
+.social-icons svg {
+  width: 28px;  
+  height: 28px;
+  fill: rgb(50, 50, 50); 
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: translateY(-5px) scale(1.1); 
+  fill: rgb(48, 161, 241); 
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 9px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+nav{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -2500px;       
+    width: 320px;        
+    height: 100%;       
+    background-color: rgb(48, 161, 241);
+    padding: 20px;
+    z-index: 100; /*aici z index e mai mic decat la burger menu pentru ca butonul de meniu sa fie deasupra ei */
+    transition: right 0.3s ease;
+    margin-right: -1px;
+    font-size: 20px;
+ }
+
+ nav.show {
+    right:0;
+    
+ }
+
+ .navi{
+    opacity: 0;
+    color:rgb(238, 238, 238);
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);   
+    transition: opacity 0.3s ease;
+ }
+
+ nav.show a.navi{
+    opacity: 1;
+ }
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;      
+    height: 30px;     
+    cursor: pointer;
+    z-index: 250; 
+    margin-right: 20px;
+    
+ }
+
+ .burger-menu.active {
+    position: fixed;  
+    top: 25px;        
+    right: 20px;       
+    margin-right: 0; 
+    
+}
+
+.burger-menu.active .bar{
+      background-color: rgb(255, 255, 255);
+}
+
+.burger-menu .bar {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    transition: all 0.3s ease; /* animatie */
+}
+
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+   
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0; /* dispare linia din mijloc */
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+}
+
+@media only screen and (max-width: 1024px) {
+
+    nav {
+        gap: 30px;
+        font-size: 18px;
+    }
+    
+
+    .header-home {
+        padding: 60px 50px; 
+    }
+    
+    .header-home h1 {
+        font-size: 60px; 
+    }
+
+
+    .two-column-section {
+        gap: 20px;
+    }
+    
+
+    .line::after {
+        width: calc(100% + 50px); 
+    }
+
+    .line-approach::after {
+        width: calc(100% + 25px);
+    }
+    
+
+    .formular {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,387 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: rgb(222, 240, 253);
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(48, 161, 241);
+    margin-bottom: 5px;
+    
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    margin-top: 0;
+    border-left: none; 
+    padding-left: 0; 
+    margin-bottom: 15px
+}
+
+main {
+    padding: 20px 40px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(48, 161, 241);
+    border-left: 5px solid rgb(48, 161, 241);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+p, dd {
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+    text-align: justify;
+}
+
+strong, dt b {
+    color: rgb(48, 161, 241);
+    font-weight: 700;
+}
+
+.nav-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(186, 225, 253);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+
+.nav-home {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    
+ }
+
+ nav{   
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 100px;
+    font-size: 20px;
+    margin-right: 10px;
+ }
+
+ .navi{
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 3px solid rgb(48, 161, 241); 
+    padding: 5px 10px; 
+    gap: 20px;
+    text-decoration: none;
+ }
+
+ .navi:hover {
+    background-color: rgb(48, 161, 241); 
+    color: white; 
+    
+    transition: all 0.3s ease; 
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+ }
+
+ .burger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+ }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 50;/* pentru ca overlay-ul sa fie sub bara de navigatie */
+    display: none;
+ }
+ #overlay.active {
+    display: block;
+     
+ }
+
+.projects article {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid rgb(222, 240, 253);
+}
+
+.projects h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    margin-bottom: 5px;
+}
+
+dl {
+    padding-left: 20px;
+}
+
+dt {
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(48, 161, 241);
+}
+
+dd {
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: 2px solid rgb(222, 240, 253);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    border-bottom: 1px dashed rgb(230, 230, 230);
+}
+
+/*stiluri pentru butoanele si sectiunea de download*/
+.download-cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(240, 248, 255); 
+    margin-top: 30px;
+    border-top: 2px dashed rgb(48, 161, 241);
+}
+
+.download-cta p {
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cta-button {
+
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.primary-download {
+    color: white;
+    background-color: rgb(48, 161, 241);
+    border: 2px solid rgb(48, 161, 241);
+    box-shadow: 0 4px 10px rgba(48, 161, 241, 0.4);
+}
+
+.primary-download:hover {
+    background-color: rgb(35, 120, 180);
+    box-shadow: 0 6px 15px rgba(35, 120, 180, 0.5);
+    transform: translateY(-2px);
+}
+
+.secondary-download {
+    color: rgb(48, 161, 241);
+    background-color: transparent;
+    border: 2px solid rgb(48, 161, 241);
+    margin-left: 15px; 
+}
+
+.secondary-download:hover {
+    background-color: rgb(48, 161, 241);
+    color: white;
+    box-shadow: 0 4px 10px rgba(48, 161, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 25px; 
+  padding: 10px 0; 
+  font-size: 18px;
+  background-color:rgb(222, 240, 253); 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(186, 225, 253);
+  
+}
+
+.social-icons svg {
+  width: 28px;  
+  height: 28px;
+  fill: rgb(50, 50, 50); 
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: translateY(-5px) scale(1.1); 
+  fill: rgb(48, 161, 241); 
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 9px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    header, main, footer {
+        padding: 10px 15px;
+    }
+
+    nav{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -2500px;       
+    width: 320px;        
+    height: 100%;       
+    background-color: rgb(48, 161, 241);
+    padding: 20px;
+    z-index: 100; /*aici z index e mai mic decat la burger menu pentru ca butonul de meniu sa fie deasupra ei */
+    transition: right 0.3s ease;
+    margin-right: -1px;
+    font-size: 20px;
+ }
+
+ nav.show {
+    right:0;
+    
+ }
+
+ .navi{
+    opacity: 0;
+    color:rgb(238, 238, 238);
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);   
+    transition: opacity 0.3s ease;
+ }
+
+ nav.show a.navi{
+    opacity: 1;
+ }
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;      
+    height: 30px;     
+    cursor: pointer;
+    z-index: 250; 
+    margin-right: 20px;
+    
+ }
+
+ .burger-menu.active {
+    position: fixed;  
+    top: 25px;        
+    right: 20px;       
+    margin-right: 0; 
+    
+}
+
+.burger-menu.active .bar{
+      background-color: rgb(255, 255, 255);
+}
+
+.burger-menu .bar {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    transition: all 0.3s ease; /* animatie */
+}
+
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+   
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0; /* dispare linia din mijloc */
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+    
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+   
+}

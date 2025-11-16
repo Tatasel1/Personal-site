@@ -1,0 +1,552 @@
+html{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(38, 38, 38);
+
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    
+}
+
+.logo-text {
+    font-size: 22px; 
+    font-weight: 600; 
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+.home-body{
+    margin:0;
+    padding: auto;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    background-color: aliceblue;
+
+}
+
+.nav-home {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    
+ }
+
+nav {   
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* Reducem de la 100px la o valoare mai flexibilă */
+    gap: 30px; 
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ .navi{
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 3px solid rgb(48, 161, 241); 
+    padding: 5px 10px; 
+    gap: 20px;
+    text-decoration: none;
+ }
+
+ .navi:hover {
+    background-color: rgb(48, 161, 241); 
+    color: white; 
+    
+    transition: all 0.3s ease; 
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+ }
+
+ .burger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+ }
+
+
+ p {
+    font-size: 17px;           
+    line-height: 1.7;          
+    color: rgb(50, 50, 50);    
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgb(186, 225, 253);
+    margin-bottom: 30px;
+    
+   
+    padding: 20px 40px 120px 40px; 
+}
+
+
+/*pentru butoanele de la finalul fiecarei sectiuni*/
+.section-button {
+
+    display: inline-block; 
+    padding: 10px 20px;
+    margin-top: 25px; 
+    
+    color: rgb(48, 161, 241); 
+    border: 3px solid rgb(48, 161, 241); 
+    border-radius: 10px;
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    
+    transition: all 0.3s ease;
+}
+
+
+.section-button:hover {
+    background-color: rgb(48, 161, 241); 
+    color: white; 
+}
+
+ h1 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center; 
+    margin-bottom: 30px;
+}
+h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400; 
+    text-align: center; 
+    opacity: 0.9;
+}
+
+ .wrapper-home{
+    margin: 15px;
+    padding: 10px;
+    text-align: right;
+    color: black;
+    
+ }
+.curiosity {
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+    color: black;
+ }
+
+ .education {
+    margin: 15px;
+    padding: 10px;
+    text-align: right;
+    color: black;
+ }
+
+ /*pentru liniile de la subtitluri*/
+ 
+.line {
+   display: inline-block;
+    font-size: 25px;
+    position: relative;    
+    padding-bottom: 10px;   
+    margin-bottom: 15px;
+}
+
+
+.line::after {
+    content: '';          
+    position: absolute;   
+    bottom: 0;             
+    height: 4px;        
+    background-color: rgb(48, 161, 241); 
+    width: calc(100% + 100px); 
+    right: 0; 
+  
+}
+
+.line-approach {
+   display: inline-block;
+    font-size: 25px;
+    position: relative;    
+    padding-bottom: 10px;   
+    margin-bottom: 15px;
+}
+
+.line-approach::after {
+    content: '';          
+    position: absolute;   
+    bottom: 0;             
+    height: 4px;        
+    background-color: rgb(48, 161, 241); 
+    width: calc(100% + 50px);
+    left: 0;
+   
+}
+
+dd {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(50, 50, 50);
+    margin-bottom: 15px;
+}
+
+dl dt {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(48, 161, 241); 
+}
+
+ul {
+      list-style: none; 
+    
+}
+
+strong{
+   color:rgb(48, 161, 241); 
+}
+ 
+/*pentru ca pozele sa apara langa text*/
+.two-column-section {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 40px; 
+    margin-bottom: 50px; 
+}
+
+.two-column-section .text-content {
+    flex: 2; 
+}
+
+.two-column-section .image_wrapper {
+    flex: 1; 
+    margin-top: 0; 
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgb(186, 225, 253);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.image_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.two-column-section .image_wrapper img {
+    width: 40%; 
+    min-width: 100px;
+    height: auto; 
+    border-radius: 40px;
+    padding: 10px; 
+    max-width: none;
+}
+
+/*pentru imaginea de coding, trebuie sa fie mai mare*/
+.width-coding {
+    width: 100% !important;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+
+
+.beyond .text-content {
+    text-align: right;
+}
+
+.approach .text-content {
+    text-align: left;
+}
+
+
+ .curiosity {
+   position: relative; 
+   margin-bottom: 50px; 
+}
+
+.curiosity::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: rgb(48, 161, 241); 
+    bottom: -60px;
+    margin-top: 50px;
+    
+    left: 0;
+    right: 350px;
+    width: auto; 
+}
+.beyond {
+   position: relative; 
+   margin-bottom: 80px; 
+}
+
+.beyond::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: rgb(48, 161, 241); 
+    bottom: -60px;
+    margin-top: 50px;
+    left: 100px;
+    right: 0;
+    width: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 25px; 
+  padding: 10px 0; 
+  font-size: 18px;
+  background-color:rgb(222, 240, 253); 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(186, 225, 253);
+  
+}
+
+.social-icons svg {
+  width: 28px;  
+  height: 28px;
+  fill: rgb(50, 50, 50); 
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: translateY(-5px) scale(1.1); 
+  fill: rgb(48, 161, 241); 
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 9px;
+    color: rgb(0, 0, 0);
+}
+
+/* support pentru mobil*/
+
+
+@media only screen and (max-width: 768px){
+    
+.home-body{
+    margin:0;
+    padding:0;
+    background-color: aliceblue;
+    
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+ 
+
+ nav{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -2500px;       
+    width: 320px;        
+    height: 100%;       
+    background-color: rgb(48, 161, 241);
+    padding: 20px;
+    z-index: 100; /*aici z index e mai mic decat la burger menu pentru ca butonul de meniu sa fie deasupra ei */
+    transition: right 0.3s ease;
+    margin-right: -1px;
+    font-size: 20px;
+ }
+
+ nav.show {
+    right:0;
+    
+ }
+
+ .navi{
+    opacity: 0;
+    color:rgb(238, 238, 238);
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);   
+    transition: opacity 0.3s ease;
+ }
+
+ nav.show a.navi{
+    opacity: 1;
+ }
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;      
+    height: 30px;     
+    cursor: pointer;
+    z-index: 250; 
+    margin-right: 20px;
+    
+ }
+
+ .burger-menu.active {
+    position: fixed;  
+    top: 25px;        
+    right: 20px;       
+    margin-right: 0; 
+    
+}
+
+.burger-menu.active .bar{
+      background-color: rgb(255, 255, 255);
+}
+
+.burger-menu .bar {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    transition: all 0.3s ease; /* animatie */
+}
+
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+   
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0; /* dispare linia din mijloc */
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+ #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 50;/* pentru ca overlay-ul sa fie sub bara de navigatie */
+    display: none;
+ }
+ #overlay.active {
+    display: block;
+     
+ }
+
+ 
+ h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+ h2 {
+    font-size: 17px;
+}
+
+.curiosity,
+.education,
+.explore {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+
+}
+
+p,
+dd {
+    color: rgb(50, 50, 50);
+}
+
+dl dt,
+strong {
+    color: rgb(48, 161, 241);
+}
+
+/* Modificari pentru liniile sub titluri */
+.line,
+.line-approach {
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.line::after,
+.line-approach::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: rgb(48, 161, 241);
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.two-column-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.beyond.two-column-section {
+    flex-direction: column-reverse;
+   
+}
+
+.two-column-section .image_wrapper {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.two-column-section .text-content {
+    flex: 2;
+    text-align: center;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+}
+
+.curiosity::after,
+.beyond::after {
+    display: none;
+}
+
+}
