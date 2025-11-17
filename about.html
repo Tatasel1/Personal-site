@@ -8,14 +8,17 @@
         <meta charset="UTF-8">
         <meta  name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me-Tatasel Daniel</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-about.css">
     </head>
 
     <body>
         <header>
         <div class="nav-home">
             
-            <img src="images/logo.png" alt="Logo" class="logo" >
+            <div class="logo-wrapper">
+                <a href="home.html"><img src="photos/logo.png" alt="Logo" class="logo" ></a>
+                <span class="logo-text">Dare to Dream</span>
+            </div>
 
             <div class="burger-menu" id="burger-menu">
                 <div class="bar"></div>
@@ -32,19 +35,37 @@
 
         </div>
 
-        <h1>About</h1>
-        <h2>Discover more about me!</h2>
+        <h1>About Me</h1>
+        <h2>Learn more about me!</h2>
+        
+        <div id="overlay"></div>
         </header>
 
         <main>
-            <section>
-                <h3>Who am I?</h3>
 
-                <p>My name is Tatasel Daniel-Valentin and I am an <strong>Computer Engineering</strong> student at <strong>Universitatea Nationala de Stiinte si Tehnologie Politehnica Bucuresti</strong></p>
-                <p>I am 20 years old, currently living in Bucharest, Romania due to my Univesity being here, but I was born and raised in Calfat, a city near Romania's border with Bulgaria. I've always been fascinated with all things technical, ever since I was little I used to take apart old computers and put them back toghether again.</p>
-                <p>Those moments are where it all started, where my passion and curiosity for how everything works, what is behind the tools we so commonly use in our daily lives, ignited. This hunger for learning, for developing solutions and coming up with ideas is what motivated me throughout my entire life.</p>
-                <p>Follow me, as I will show you the insides of my life, my hobbies and also the things I have been working on, my so called "projects".</p>
+            <section class="profile-section">
+                <div class="image-wrapper profile-wrapper">
+                    <img src="photos/myself.jpg" alt="myself" >
+                </div>
+                <div class="profile-contact-info">
+                    <p><strong>Phone:</strong> +40 123 456 789</p>
+                    <p><strong>Email:</strong> daniel.tatasel@yahoo.com</p>
+                </div>
+            </section>
+
+
+            <section class="two-column-section">
                 
+                <div class="text-content">
+                    <h3>Who am I?</h3>
+
+                    <p>I'm Tatasel Daniel-Valentin, a <strong>Computer Engineering</strong> student at <strong>Universitatea Nationala de Stiinte si Tehnologie Politehnica Bucuresti</strong>. I'm originally from Calafat, a small city on the border Romania has with Bulgaria, but I'm currently based in Bucharest for my studies.</p>
+                    <p>My fascination with tech isn't new at all. It all started when I was a kid, taking apart old family computers just to see how they ticked. I was hooked on figuring out what, exactly, was going on behind the screen.</p>
+                    <p>That same curiosity is what drives me today. It's a hunger to understand the "why" behind the "what," and it's the force that motivates me to study in order to later develop solutions and build new things. It’s the core of my "engineer's mindset."</p>
+                </div>
+                
+                
+
             </section>
 
             <section>
@@ -53,10 +74,111 @@
                 <p>To me, engineering isn't just a major; it's a way of thinking. I'm wired to optimize—I don't just want to build things that work, I want to build them to work efficiently. It's a drive that pushes me deep into C and C++, where you're forced to be deliberate about memory and data structures to create genuinely fast, resource-conscious solutions.</p>
                 <p>But precision is only half the equation. That same mindset applies to building scalable architecture with C# or using Python to automate a tedious process. It all comes back to finding a smarter, cleaner way to solve a problem, and I track all of it using Git across both Linux and Windows.</p>
                 <p>The other half of that equation, which I learned firsthand in LSAC and Interact, is people. The most elegant code in the world doesn't mean much if it's built in a silo. My volunteer work taught me that clear communication and taking real responsibility for deadlines are just as critical as any technical skill. It's the same lesson I practice on the volleyball court—you win through trust and perfect synchronization, not just individual talent. At the end of the day, that's my entire approach: know the tools intimately, but always prioritize the team you're building with.</p>
+            
+                <div class="section-images">
+                    <img src="photos/lsac.jpeg" alt="lsac">
+                    <img src="photos/interact.jfif" alt="interact">
+                </div>
+            </section>
+
+            <section>
+                <h3>Hobbies and Interests</h3>
+
+                <p>When I'm not deep in project or class work, I need to get away from the screen. My go-to is <strong>volleyball</strong>. It's how I stay active, but it’s also a constant reminder of how important teamwork and strategy are—which applies just as much to engineering as it does to a game.</p>
+                <p>I've also been fascinated with <strong>cars</strong> for as long as I can remember. It's not just the mechanics; it's the art of the design, the sound of the engine, and that feeling of freedom on an open road. It’s another form of complex, beautiful engineering.</p>
+                <p>Finally, I have a constant itch to <strong>travel</strong>. Just exploring a new environment and walking down unfamiliar streets is the best way for me to clear my head and get a fresh perspective.</p>
+                
+                <div class="section-images">
+                    <img src="photos/volleyball-fields.png" alt="volleyball">
+                    <img src="photos/travel2.jfif" alt="travel"> 
+                    <img src="photos/turban.jfif" alt="cars">
+                </div>
+            </section>
+            
+            <section>
+                <h3>My Goals</h3>
+
+                <p>Looking ahead, my goal is pretty simple: I want to use my engineering skills to build cool things that actually matter. I thrive in fast-paced environments where I can team up with smart people, keep learning, and be part of pushing technology forward.</p>
+                <p>Right now, I'm focused on finishing my degree strong, but my main priority is getting as much hands-on experience as I can through internships and my own projects. Down the line, I'd love to grow into a leadership role where I can help drive new advancements in areas like AI, cybersecurity, or complex software development.</p>
+                <p>Ultimately, my ambition is to be in the thick of it—using my skills to tackle complex challenges and build tech that genuinely improves lives.</p> 	
+            
+                <div class="section-images">
+                    <img src="photos/fungsi artificial intelligence.jpg" alt="cars">
+                </div>
+            </section>
+
+            <section>
+                <h3>Things I've Built</h3>
+
+                <p>This is where the theory hits the keyboard. My "engineer's mindset" is all about building, so here are a couple of my favorite projects where I got to put those ideas into practice.</p>
+
+                <div class="projects-container">
+
+                    <article class="project-card">
+                        <h4>An Educational Pac-Man</h4>
+                        <p>For this team project, we built a Pac-Man-style game in Unity, but with a twist. We added a pop-quiz component to make it educational. I was responsible for writing the C# scripts that handled all the player movement, collisions, and menus. It was a really fun way to blend classic gaming with a bit of learning.</p>
+                        <p><strong>Tech used:</strong> Mostly C# (both in Unity and for the quiz logic)</p>
+                
+                        <div class="image-wrapper">
+                            <img src="photos/pacman1.png" alt="pacman1">
+                            <img src="photos/pacman 2.png" alt="pacman2">
+                            <img src="photos/pacman3.png" alt="pacman3">
+                            <img src="photos/pacman4.png" alt="pacman4">
+                             </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h4>Automatic Plant-Watering Robot</h4>
+                        <p>I built this little guy for the NextLabTech competition. It’s a robot designed to automate plant watering (so you don't kill them!). I used an Arduino UNO, hooked it up to a humidity sensor, and wrote the code to make it automatically water the plant whenever the soil got too dry. No more sad, thirsty plants!</p>
+                        <p><strong>Tech used:</strong> C++ in the Arduino IDE</p>
+
+                        <div class="image-wrapper">
+                            <img src="photos/plant-watering-robot.jpg" alt="plant watering robot 1">
+                            </div>
+                    </article>
+
+                </div>
             </section>
         </main>
 
 
+        <footer>
+            <div class="social-icons">
+                Contact
+             <a href="https://www.linkedin.com/in/daniel-valentin-tatasel-633a77387" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+            </a>
+             <a href="https://www.instagram.com/dtatasel" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+            <a href="mailto:daniel.tatasel@yahoo.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z" />
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                            </svg>
+                            </a>
+            <a href="https://www.facebook.com/tatasel.daniel/?locale=ro_RO" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+            </a>
+                
+            </div>
+
+            <p  class="copyright">&copy; 2024 Tatasel Daniel-Valentin. All rights reserved.</p>
+        </footer>
 
         <script src="script.js"></script>
     </body>

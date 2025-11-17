@@ -42,7 +42,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    /* Reducem de la 100px la o valoare mai flexibilă */
     gap: 30px; 
     font-size: 20px;
     margin-right: 10px;
@@ -86,16 +85,6 @@ nav {
     color: rgb(50, 50, 50);    
 }
 
-header {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 10px rgb(186, 225, 253);
-    margin-bottom: 30px;
-    
-   
-    padding: 20px 40px 120px 40px; 
-}
-
-
 /*pentru butoanele de la finalul fiecarei sectiuni*/
 .section-button {
 
@@ -117,6 +106,13 @@ header {
 .section-button:hover {
     background-color: rgb(48, 161, 241); 
     color: white; 
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgb(186, 225, 253);
+    margin-bottom: 30px;
+    padding: 20px 40px 120px 40px; 
 }
 
  h1 {
@@ -251,7 +247,7 @@ strong{
 }
 
 .two-column-section .image_wrapper img {
-    width: 40%; 
+    width: 250px; 
     min-width: 100px;
     height: auto; 
     border-radius: 40px;
