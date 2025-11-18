@@ -1,3 +1,5 @@
+/*Celelalte fisiere .css au aproximativ aceleasi proprietati ca acesta*/
+
 html{
     font-family: 'Quicksand', sans-serif;
     background-color: rgb(38, 38, 38);
@@ -274,7 +276,7 @@ strong{
     text-align: left;
 }
 
-
+/*sectiunea asta este pentru liniile dintre sectiuni*/
  .curiosity {
    position: relative; 
    margin-bottom: 50px; 
@@ -309,6 +311,7 @@ strong{
     width: auto; 
 }
 
+/*formatarea footer-ului*/
 footer {
     text-align: center;
     padding: 10px;
@@ -349,8 +352,6 @@ footer {
 }
 
 /* support pentru mobil*/
-
-
 @media only screen and (max-width: 768px){
     
 .home-body{
