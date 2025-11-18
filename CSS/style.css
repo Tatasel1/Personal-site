@@ -63,6 +63,7 @@ nav {
     transition: all 0.3s ease; 
 }
 
+ /* nu se vede pe desktop*/
 .burger-menu {
     display: none;
     flex-direction: column;
