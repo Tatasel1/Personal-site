@@ -1,52 +1,66 @@
 :root{
     --primary-color: white;
-    --secondary-color: rgb(186, 225, 253)
+    --secondary-color: rgb(186, 225, 253);
     --font-family: 'Quicksand', sans-serif;
     --heading-font: 'Quicksand', cursive;
 }
 
-html{
-    font-family: Quicksand, sans-serif;
-    background-color: aliceblue;
-}
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--secondary-color);
+html, body {
     margin: 0;
-    
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
-    
-
+    background-color: aliceblue;
+    position: fixed;    
+    top: 0;
+    width: 100%;
+    z-index: 1000;      
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
+
+
+header.ascuns {
+    transform: translateY(-100%); 
+}
+
 .logo img {
     height: 110px;
     width: auto;
     border-radius: 50%;
 }
 
-.showcase {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 30px;
-    margin: 40px;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
-   
+main {
+    height: 100vh; 
+    width: 100vw;
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh; 
+    width: 100vw; 
+    scroll-snap-align: start; 
+    position: relative; 
+    overflow: hidden; 
+    box-sizing: border-box;
 }
 
 @keyframes aparitieDinStanga {
     from {
         opacity: 0; 
-        transform: translateX(-100px); 
+        transform: translateX(-50px); 
     }
     to {
         opacity: 1;
@@ -54,38 +68,157 @@ header {
     }
 }
 
-.left {
+.showcase {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+
+.showcase-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    
+    width: 85%;
+    max-width: 1300px;
+    height: auto;
+    min-height: 60vh;
+    padding: 50px;
+    
+    background-color: white; 
+    border-radius: 30px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     text-align: right;
     gap: 20px;
-    border-right: 3px solid rgb(35, 120, 180);
-    padding-right: 20px;
-    animation: aparitieDinStanga 0.5s ease-out forwards;
+    padding-right: 40px;
+    
+    opacity: 0; 
+    animation: aparitieDinStanga 0.8s ease-out forwards;
+}
+
+.left h1 {
+    font-family: var(--heading-font);
+    font-size: 48px;
+    color: rgb(35, 120, 180);
+    margin: 0;
+}
+
+.divider {
+    width: 3px;
+    height: 300px;
+    background-color: rgb(35, 120, 180);
+    border-radius: 2px;
+    
+    opacity: 0;
+    animation: aparitieDinStanga 0.8s ease-out forwards 0.3s;
 }
 
 .right {
-    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
     opacity: 0;
-    animation: aparitieDinStanga 3s ease-out  forwards;
+    animation: aparitieDinStanga 0.8s ease-out forwards 0.6s;
 }
 
 .right img {
-    width: 60%;
-    height: auto;
+    width: 80%;
+    height:auto;
     object-fit: cover;
-    opacity: 0.7;
-    transition: 0.4s ease;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 
 .right img:hover {
-    opacity: 1;
-    transform: scale(1.07);
+    transform: scale(1.05);
+}
+
+.info-text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    opacity: 0;
+    animation: aparitieDinStanga 0.8s ease-out forwards 0.9s;
+}
+
+strong{
+    color: rgb(35, 120, 180);
 }
 
 
+.scroller-container {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.scroller-text {
+    animation: scrollUp 6s infinite ease-in-out;
+}
+
+
+.scroller-text .item {
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(35, 120, 180);
+    padding: 0;
+    margin: 0;
+}
+
+
+@keyframes scrollUp {
+    0%, 20% {
+        transform: translateY(0);                
+    }
+    25%, 45% {
+        transform: translateY(-50px);            
+    }
+    50%, 70% {
+        transform: translateY(-100px);            
+    }
+    
+    100% {
+        transform: translateY(0);                
+    }
+}
 
 @keyframes buton {
    0% {
@@ -99,16 +232,17 @@ header {
  .btn {
    position: relative;
    padding: 10px 20px;
-   
    font-size: 16px;
-   color: black;
+   color: rgb(35, 120, 180);
    text-decoration: none;
    border: none;
-
    overflow: hidden;
    border-radius: 2px;
    z-index: 1;
    transition: 0.3 ease;
+   width: 100px;
+    height: 30px;
+    text-align: center;
  }
 
 .btn::before{
@@ -118,7 +252,7 @@ header {
     left: 50%;
     width: 300%; 
     height: 300%;
-    background: conic-gradient(
+    background: 5px conic-gradient(
         aliceblue, 
         aliceblue, 
         aliceblue, 
@@ -141,7 +275,7 @@ header {
 
 .btn:hover{
 color: rgb(35, 120, 180);
-transform: scale(1.1);
+transform: scale(1.2);
 color: white;
 transition: 0.3s ease;
 }
@@ -153,4 +287,42 @@ transition: 0.3s ease;
 
 .btn:hover::after{
     background: rgb(35, 120, 180);
+}
+
+#gallery > .image {
+    width:40vmin;
+    height:auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.gallery-section {
+    background-color: rgb(35, 120, 180);
+    width: 100vw;
+    height: 100vh;
+    position: relative; 
+}
+
+
+#gallery {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 60%; 
+    transform: translate(0%, -50%); 
+    user-select: none;
+}
+
+
+.gallery_h2 {
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    z-index: 2;
 }
