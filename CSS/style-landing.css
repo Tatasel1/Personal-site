@@ -7,6 +7,7 @@
 
 html{
     font-family: Quicksand, sans-serif;
+    background-color: aliceblue;
 }
 
 body {
@@ -25,7 +26,7 @@ header {
 
 }
 .logo img {
-    height: 200px;
+    height: 110px;
     width: auto;
     border-radius: 50%;
 }
@@ -33,7 +34,12 @@ header {
 .showcase {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
+    gap: 30px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
    
 }
 
@@ -55,7 +61,7 @@ header {
     align-items: end;
     text-align: right;
     gap: 20px;
-    border-right: 3px solid rgb(48, 161, 241);
+    border-right: 3px solid rgb(35, 120, 180);
     padding-right: 20px;
     animation: aparitieDinStanga 0.5s ease-out forwards;
 }
@@ -67,7 +73,7 @@ header {
 }
 
 .right img {
-    width: 100%;
+    width: 60%;
     height: auto;
     object-fit: cover;
     opacity: 0.7;
@@ -79,21 +85,72 @@ header {
     transform: scale(1.07);
 }
 
-a {
-    text-decoration: none;
-    color: black;
+
+
+@keyframes buton {
+   0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
  .btn {
-    border: 3px solid rgb(186, 225, 253);
-    padding: 10px 20px;
-    font-size: 16px;
-    color:black;
-    transition: 0.3s ease;
+   position: relative;
+   padding: 10px 20px;
+   
+   font-size: 16px;
+   color: black;
+   text-decoration: none;
+   border: none;
+
+   overflow: hidden;
+   border-radius: 2px;
+   z-index: 1;
+   transition: 0.3 ease;
  }
 
-.btn:hover {
-    background-color: rgb(186, 225, 253);
-    color: var(--primary-color);
-    transform: scale(1.05);
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; 
+    height: 300%;
+    background: conic-gradient(
+        aliceblue, 
+        aliceblue, 
+        aliceblue, 
+        rgb(35, 120, 180)
+    );
+
+    animation: buton 1.5s linear infinite;
+    z-index: -2;
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: white;
+    border-radius: 2px;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+color: rgb(35, 120, 180);
+transform: scale(1.1);
+color: white;
+transition: 0.3s ease;
+}
+
+.btn:hover::before{
+    animation: none;
+    opacity: 0;
+}
+
+.btn:hover::after{
+    background: rgb(35, 120, 180);
 }
